@@ -32,6 +32,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    nodejs
     git
     vim
     wget
