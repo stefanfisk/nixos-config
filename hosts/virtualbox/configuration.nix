@@ -34,6 +34,7 @@
   environment.systemPackages = with pkgs; [
     nodejs
     git
+    nixpkgs-fmt
     vim
     wget
     firefox
