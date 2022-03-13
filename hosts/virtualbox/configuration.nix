@@ -4,6 +4,8 @@
   imports =
     [
       ./hardware-configuration.nix
+      ../../modules/home-manager.nix
+      ../../users/stefanfisk.nix
     ];
 
   boot.loader.grub.enable = true;
@@ -26,18 +28,10 @@
     keyMap = "us";
   };
 
-  users.users.stefanfisk = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
-  };
-
   environment.systemPackages = with pkgs; [
-    nodejs
     git
-    nixpkgs-fmt
     vim
     wget
-    firefox
   ];
 
   security.sudo.wheelNeedsPassword = false;
