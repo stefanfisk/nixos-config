@@ -29,7 +29,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    git
+    gitAndTools.gitFull
     vim
     wget
   ];
