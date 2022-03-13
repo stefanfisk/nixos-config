@@ -38,5 +38,7 @@
 
   services.openssh.enable = true;
 
+  programs.ssh.startAgent = true;
+
   system.stateVersion = "21.11";
 }
