@@ -12,5 +12,18 @@ with lib; {
       pkgs.nixpkgs-fmt
       pkgs.firefox
     ];
+
+    programs.git = {
+      enable = true;
+
+      userName = "Stefan fisk";
+      userEmail = "contact@stefanfisk.com";
+
+      extraConfig = {
+        init = {
+          defaultBranch = "main";
+        };
+      };
+    };
   };
 }
