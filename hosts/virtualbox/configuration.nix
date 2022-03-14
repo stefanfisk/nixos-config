@@ -31,6 +31,7 @@
 
   environment.systemPackages = with pkgs; [
     gitAndTools.gitFull
+    psmisc
     vim
     wget
   ];
