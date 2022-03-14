@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ../../modules/home-manager.nix
       ../../modules/vscode-server.nix
+      ../../modules/xserver.nix
       ../../users/stefanfisk.nix
     ];
 

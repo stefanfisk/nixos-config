@@ -57,5 +57,13 @@ with lib; {
         };
       };
     };
+
+    xsession.windowManager.i3 = {
+      enable = true;
+
+      config = {
+        modifier = "Mod1";
+      };
+    };
   };
 }
