@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ../../modules/home-manager.nix
+      ../../modules/vscode-server.nix
       ../../users/stefanfisk.nix
     ];
 
